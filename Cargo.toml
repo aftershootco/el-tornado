@@ -1,0 +1,16 @@
+[package]
+name = "temp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+bytes = "1.3.0"
+img-parts = "0.3.0"
+kamadak-exif = "0.5.5"
+libraw_r = { git = "https://github.com/aftershootco/libraw-rs", features = ["jpeg", "no-build"]}
+xmp = { git = "https://github.com/aftershootco/xmp", branch = "orientation" }
+
+[build-dependencies]
+pkg-config = "0.3.26"
+vergen = "*"
