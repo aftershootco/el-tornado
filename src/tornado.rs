@@ -14,6 +14,7 @@ pub const ALLOWED_EXTENSIONS_RAW: [&str; 37] = [
 ];
 pub const ALLOWED_EXTENSIONS_JPEG: [&str; 3] = ["jpg", "jpeg", "png"];
 
+#[derive(Copy, Clone)]
 pub enum Direction {
     Left,
     Right,
