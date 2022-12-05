@@ -60,7 +60,7 @@ impl std::ops::Sub for BasicFlip {
     type Output = u8;
     fn sub(self, other: Self) -> u8 {
         const VALUES: [u8; 4] = [3, 8, 1, 6];
-        VALUES[(VALUES.iter().position(|&x| x as usize == self.0).unwrap() - other.0) % 4] as u8
+        VALUES[(VALUES.iter().position(|&x| x as usize == self.0).unwrap() as i8 - other.0 as i8) as usize % 4] as u8
     }
 }
 

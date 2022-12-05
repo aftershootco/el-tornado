@@ -8,9 +8,6 @@ edition = "2021"
 bytes = "1.2.1"
 img-parts = "0.3.0"
 kamadak-exif = "0.5.5"
-libraw_r = { git = "https://github.com/aftershootco/libraw-rs", features = ["jpeg", "no-build"]}
+libraw_r = { git = "https://github.com/aftershootco/libraw-rs", features = ["jpeg"]}
 xmp = { git = "https://github.com/aftershootco/xmp", branch = "orientation" }
 
-[build-dependencies]
-pkg-config = "0.3.26"
-vergen = "*"
